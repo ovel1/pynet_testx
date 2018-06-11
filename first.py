@@ -21,3 +21,6 @@ print (f"My IP Address1: {ip_addr1:>20}")
 print (f"My IP Address2: {ip_addr2:>20}")
 print (f"My IP Address3: {ip_addr3:>20}")
 
+for ip in octets:
+    print(ip)
+
