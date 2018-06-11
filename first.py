@@ -24,3 +24,5 @@ print (f"My IP Address3: {ip_addr3:>20}")
 for ip in octets:
     print(ip)
 
+# comments
+# commnents 11
