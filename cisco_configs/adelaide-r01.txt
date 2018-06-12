@@ -152,7 +152,7 @@ boot-end-marker
 !
 !
 logging buffered 512000
-enable secret 5 $1$Eaex$pKrYDCD23U/.DBzXaJFnz.
+enable secret 5 
 !
 no aaa new-model
 ethernet lmi ce
@@ -182,7 +182,7 @@ no ip source-route
 !
 no ip bootp server
 no ip domain lookup
-ip domain name speedshield.com.au
+ip domain name local
 ip cef
 no ipv6 cef
 !
@@ -202,8 +202,8 @@ license udi pid C891F-K9 sn FGL213892GM
 !
 !
 vtp mode transparent
-username source privilege 15 password 7 000343520D4F26130E
-username user-speedsheid privilege 3 password 7 0255526D2C3F0E0247
+username source privilege 15 password 
+username user-speedsheid privilege 3 password
 !
 !
 !
@@ -341,7 +341,7 @@ interface GigabitEthernet7
  no ip address
 !
 interface GigabitEthernet8
- description *** OVPI_poll - Primary WAN Interface to Evolve CCT ID is A99H O5RX J32AD11 EVC001 ***
+ description *** OVPI_poll - Primary WAN Interface to Evolve CCT ID is ***
  ip address 10.255.254.73 255.255.255.252
  no ip redirects
  no ip unreachables
@@ -450,14 +450,14 @@ ip access-list extended al-rdp
  permit tcp any eq 3389 any
 !
 !
-snmp-server community SpEed4sHieldd RW emc-snmp-access
-snmp-server community @d@Ptal1ft RO cust-snmp-access
+snmp-server community  RW emc-snmp-access
+snmp-server community  RO cust-snmp-access
 snmp-server trap-source Loopback0
 snmp-server location Alliance Hangar, Hangar 1 Western Link Road, Adelaide Airport, SA 5950
 snmp-server enable traps snmp linkdown linkup coldstart warmstart
 snmp-server enable traps envmon
 snmp-server enable traps config
-snmp-server host 203.202.141.34 version 2c SpEed4sHieldd
+snmp-server host 203.202.141.34 version 2c 
 !
 control-plane
 !
