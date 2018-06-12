@@ -4,5 +4,5 @@ cisco_cfg = CiscoConfParse("cisco_configs/adelaide-r01.txt")
 intf=cisco_cfg.find_objects(r"^interface")
 
 for iface in intf:
-    print(iface)    
+    print(iface.text)    
 
