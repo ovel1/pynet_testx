@@ -5,4 +5,4 @@ intf=cisco_cfg.find_objects(r"^interface")
 
 for iface in intf:
     print(iface.text)    
-
+# from the lab
