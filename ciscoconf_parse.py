@@ -42,6 +42,14 @@ pfs_crypto=list()
 nonaes_crypto=list()
 crypto_maps=cisco_cfg.find_objects(r"^crypto map CRYPTO")
 
+print("Crypto-maps:")
+for cryptomap in crypto_maps:
+    print(cryptomap.text)
+    for child in cryptomap.children:
+        print(child.text)
+print()
+
+
 for cryptomap in crypto_maps:
     if cryptomap.re_search_children(r"set pfs group2"):
         pfs_crypto.append(cryptomap)
